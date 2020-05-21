@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link href="" rel="stylesheet">
+
+    <title>WeatherApp</title>
+</head>
+
+<body>
+    <div class="container-fluid section-one">
+        <h1>Choose what you want:</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-sm-12">
+                <p class="choice-text">Check weather for your's current position</p>
+                <p class="choice-text" id="city">Your's city: <span class="city-name"></span></p>
+                <button id="btn-location" type="button" class="btn btn-primary btn-lg">Check</button>
+            </div>
+            <div class="col-12 col-md-6 col-sm-12" id="two">
+                <p class="choice-text">Check weather for chosen place</p>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="city-input" placeholder="City name">
+                    <button id="btn-choice" type="button" class="btn btn-primary btn-lg">Check</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid section-two">
+        <div id="weather-video">
+            <video autoplay muted loop id="myVideo">
+                <source src="" type="video/mp4"></video>
+        </div>
+        <table class="table table-bordered" id="wheater-info">
+            <tr>
+                <td>City</td>
+                <td id="city-info"></td>
+            </tr>
+            <tr>
+                <td>Weather</td>
+                <td id="weath-info"></td>
+            </tr>
+            <tr>
+                <td>Temperature</td>
+                <td id="temp-info"></td>
+            </tr>
+            <tr>
+                <td>Pressure</td>
+                <td id="pressure-info"></td>
+            </tr>
+            <tr>
+                <td>Wind Speed</td>
+                <td id="windSpeed-info"></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
