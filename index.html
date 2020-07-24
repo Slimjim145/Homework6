@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <link rel="stylesheet" href="./index.css">
+    <!-- <link rel="stylesheet" href="./index.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
     <link href="" rel="stylesheet">
@@ -15,29 +15,38 @@
 </head>
 
 <body>
-    <div class="container-fluid section-one">
-        <h1>Choose what you want:</h1>
-        <div class="row">
-            <div class="col-12 col-md-6 col-sm-12">
-                <p class="choice-text">Check weather for your's current position</p>
-                <p class="choice-text" id="city">Your's city: <span class="city-name"></span></p>
-                <button id="btn-location" type="button" class="btn btn-primary btn-lg">Check</button>
-            </div>
-            <div class="col-12 col-md-6 col-sm-12" id="two">
-                <p class="choice-text">Check weather for chosen place</p>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="city-input" placeholder="City name">
-                    <button id="btn-choice" type="button" class="btn btn-primary btn-lg">Check</button>
+    <div class="jumbotron">
+        <h1 class="display-4">Choose what you want:</h1>
+        <div class="container-fluid section-one">
+           
+            <div class="row">
+                <div class="col-12 col-md-6 col-sm-12">
+                    <p class="choice-text">Check weather for your's current position</p>
+                    <p class="choice-text" id="city">Your's city: <span class="city-name"></span></p>
+                    <button id="btn-location" type="button" class="btn btn-primary btn-lg">Check</button>
+                </div>
+                <div class="col-12 col-md-6 col-sm-12" id="two">
+                    <p class="choice-text">Check weather for chosen place</p>
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-2" id="city-input" placeholder="City name">
+                        <button id="btn-choice" type="button" class="btn btn-primary btn-lg">Check</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
+        <!-- <hr class="my-4"> -->
+        <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+      </div>
+
+   
 
     <div class="container-fluid section-two">
-        <div id="weather-video">
+        <!-- <div id="weather-video">
             <video autoplay muted loop id="myVideo">
                 <source src="" type="video/mp4"></video>
-        </div>
+        </div> -->
         <table class="table table-bordered" id="wheater-info">
             <tr>
                 <td>City</td>
@@ -62,13 +71,18 @@
         </table>
     </div>
 
-
-
-
-
-
-
-    <script src="index.js"></script>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./index.js"></script>
 
 </body>
 
